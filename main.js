@@ -1,15 +1,15 @@
-var divgame = document.getElementById("print");
+const divgame = document.getElementsByClassName('divincr')
 
 
 function AIgame () {
     var random = Math.floor(Math.random() * 3)
     console.log(random)
     if (random == 0) {
-        divgame.innerHTML("Pierre")
+        divgame.write = "Pierre"
     } else if (random == 1) {
-        divgame.innerHTML("Papier")
+        divgame.write = "Papier"
     } else {
-        divgame.innerHTML("Ciseaux")
+        divgame.write = "Ciseaux"
     }
 
 }
@@ -17,18 +17,24 @@ function AIgame () {
 AIgame();
 
 
-var btntype = ["debug"]
+var btntype = "null"
 
 function pierrebtnclick() {
-    btntype.push("Pierre")
-    console.log(btntype[1])
-    btntype.splice[1];
+    btntype = "Pierre"
+    console.log(btntype)
 }
 
 
 function feuillebtnclick() {
-    btntype.push("Papier")
-    console.log(btntype[1])
-    btntype.splice[1];
+    btntype = "feuille"
+    console.log(btntype)
 }
-console.log("salut");
+
+function couteaubtnclick(){
+
+btntype = "couteau"
+console.log(btntype);
+
+
+
+}
